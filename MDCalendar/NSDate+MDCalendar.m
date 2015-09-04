@@ -214,7 +214,7 @@
                   
 NSDateComponents * MDCalendarDateComponentsFromDate(NSDate *date) {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    return [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitWeekOfMonth|NSCalendarUnitWeekday|NSCalendarUnitDay fromDate:date];
+    return [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitWeekOfYear|NSCalendarUnitWeekday|NSCalendarUnitDay fromDate:date];
 }
 
 NSDate * MDCalendarDateFromComponents(NSDateComponents *components) {
