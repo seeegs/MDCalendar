@@ -63,6 +63,11 @@
 
 @interface MDCalendar : UIView
 
+/**
+ *  The collectionView the calendar is based on. Exposed so as to enable `-reloadData`.
+ */
+@property (nonatomic, strong, readonly) UICollectionView *collectionView;
+
 @property (nonatomic, assign) id<MDCalendarDelegate>delegate; /** A delegate that responds to calendar events. */
 
 ///--------------------------------
