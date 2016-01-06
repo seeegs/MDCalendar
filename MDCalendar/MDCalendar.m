@@ -392,7 +392,7 @@ static CGFloat const kMDCalendarHeaderViewWeekdayBottomMargin  = 5.f;
 @end
 
 @interface MDCalendar () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
-@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong, readwrite) UICollectionView *collectionView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *layout;
 
 @property (nonatomic, assign) NSDate *currentDate;
